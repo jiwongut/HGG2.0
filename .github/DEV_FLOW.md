@@ -44,9 +44,15 @@
 
 `git remote -v show` 명령어를 통해 업스트림 브랜치 등록 여부를 확인합니다. (업스트림 브랜치는 원본 레포지토리 주소를 참조해야합니다.) 이후 변경사항 업데이트를 위해서는 아래 명령어를 실행해 주면 됩니다.
 
-```
-git fetch upstream
-```
+<img width="481" alt="스크린샷 2021-08-11 오후 11 09 14" src="https://raw.githubusercontent.com/Parkjju/files/main/img/github/fetch-upstream.png">
+
+`git fetch upstream` 명령어를 실행하면 원본 레포지토리의 `upstream` 브랜치로부터 추가된 변경사항들을 **로컬상의 포크 레포지토리에 불러옵니다.** 불러올 때의 브랜치 명은 `upstream/main` 혹은 master브랜치를 이용하시는 분들은 `upstream/master`의 이름으로 불러옵니다.
+
+변경사항들을 로컬 상에 반영하기 위해서는 `git merge upstream/main` 명령어를 입력하면 됩니다.
+
+로컬 상에 원본 레포의 변경사항이 모두 반영되면 이제 **포크 레포지토리에 push하여 포크한 원격 저장소에까지 변경사항을 모두 반영해주면 됩니다.**
+
+**Fork 레포지토리 최신화 작업은 개발 시작 전 항상 체크해주시기 바랍니다!**
 
 ## Branch 생성 및 소스 수정
 
@@ -67,6 +73,8 @@ git fetch upstream
 하나의 커밋은 가능하면 커밋 메시지가 의미하는 하나의 내용을 담는 것이 좋습니다. [(커밋의 원자성)](https://palindrom615.dev/git-know-how/#git_add_-p%EB%A1%9C_%EC%9B%90%EC%9E%90%EC%A0%81_%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0)
 
 이는 풀 리퀘스트를 리뷰할 때나 이후 히스토리를 파악할 때 큰 도움이 됩니다.
+
+**브랜치 컨벤션 추가 예정**
 
 ## Create Pull Request
 

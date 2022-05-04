@@ -5,9 +5,9 @@ import Content from './Content';
 function App() {
   return (
     <>
-    <Header />
-    <Content />
-    <Navigation />
+      <Header />
+      <Content />
+      <Navigation />
     </>
   );
 }

@@ -1,0 +1,84 @@
+:root {
+  /* Color */
+  --color-linear: #cb65cd;
+  --color-iris: #4B4BED;
+  --color-hgg1: #6524FF;
+  --color-hgg2: rgba(101, 36, 255, 0.8);
+  --color-hgg3: rgba(101, 36, 255, 0.6);
+  --color-hgg4: rgba(101, 36, 255, 0.4);
+  --color-black: #1C1C1E;
+  --color-dark-gray: #424242;
+  --color-white: #FFFFFF;
+  --color-grey: #E3E3E3;
+
+  /* Font size */
+  --font-large: 24px;
+  --font-medium: 14px;
+  --font-regular: 9px;
+  --font-small: 8px;
+  --font-micro: 7px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 2px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* Header */
+.header {
+  /*display: flex;
+  margin: 20px;*/
+  height: 32px;
+  padding: 1rem;
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--logo {
+  width: 50px;
+  height: 30px;
+}
+
+.header--icons-bell, .header--icons-user, .header--icons-search
+{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* Content */
+.content {
+  margin: 6px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar--icons {
+  text-align: center;
+}
+
+.navbar--icons-home, .navbar--icons-goods, .navbar--icons-register,
+.navbar--icons-review, .navbar--icons-faq
+{
+  display: inline-block;
+  line-height: 0px;
+  margin: 16px 12px 16px 12px;
+}
+
+.navbar--icons-register {
+  margin-bottom: 6px;
+}

@@ -42,12 +42,12 @@
   align-items: center;
 }
 
-.header--logo {
+.header__logo {
   width: 50px;
   height: 30px;
 }
 
-.header--icons-bell, .header--icons-user, .header--icons-search
+.header__icons-bell, .header__icons-user, .header__icons-search
 {
   margin-left: 4px;
   margin-right: 4px;
@@ -62,23 +62,20 @@
 .navbar {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+}
+
+.navbar__icons {
   display: flex;
   justify-content: center;
 }
 
-.navbar--icons {
-  text-align: center;
-}
-
-.navbar--icons-home, .navbar--icons-goods, .navbar--icons-register,
-.navbar--icons-review, .navbar--icons-faq
+.navbar__icons-home, .navbar__icons-goods, .navbar__icons-register,
+.navbar__icons-review, .navbar__icons-faq
 {
   display: inline-block;
   line-height: 0px;
-  margin: 16px 12px 16px 12px;
-}
-
-.navbar--icons-register {
-  margin-bottom: 6px;
+  margin: 10px 12px 10px 12px;
 }

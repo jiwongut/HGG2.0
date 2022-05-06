@@ -1,19 +1,19 @@
 import './style/style.css';
-import home from './assets/homeIcon.png';
-import goodsBulletine from './assets/shoppingBag.png';
-import goodsPlus from './assets/goodsPlus.png';
-import reviewBulletine from './assets/pencilIcon.png';
-import faq from './assets/offerIcon.png';
+import homeIcon from './assets/homeIcon.svg';
+import goodsBulletineIcon from './assets/goodsBulletineIcon.svg';
+import goodsPlusIcon from './assets/goodsPlusIcon.svg';
+import reviewBulletineIcon from './assets/reviewBulletineIcon.svg';
+import faqIcon from './assets/faqIcon.svg';
 
 function Navigation() {
   return (
     <div className="navbar">
-      <div className="navbar--icons">
-        <img className="navbar--icons-home" src={home} alt="홈" />
-        <img className="navbar--icons-goods" src={goodsBulletine} alt="상품게시판" />
-        <img className="navbar--icons-register" src={goodsPlus} alt="게시글등록" />
-        <img className="navbar--icons-review" src={reviewBulletine} alt="후기게시판" />
-        <img className="navbar--icons-faq" src={faq} alt="FAQ" />
+      <div className="navbar__icons">
+        <img className="navbar__icons-home" src={homeIcon} alt="홈" />
+        <img className="navbar__icons-goods" src={goodsBulletineIcon} alt="상품게시판" />
+        <img className="navbar__icons-register" src={goodsPlusIcon} alt="게시글등록" />
+        <img className="navbar__icons-review" src={reviewBulletineIcon} alt="후기게시판" />
+        <img className="navbar__icons-faq" src={faqIcon} alt="FAQ" />
       </div>
     </div>
   );

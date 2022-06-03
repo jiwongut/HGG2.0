@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Category from './routes/category/Category';
 import Main from './routes/Main';
 
 function Router() {
@@ -6,7 +7,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
     </BrowserRouter>
   );

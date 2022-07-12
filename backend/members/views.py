@@ -9,7 +9,7 @@ from .models import Member
 class MembersView(APIView):
   # create member
   def post(self, request):
-    serializer = MemberSerializer(data=request.data)
+    serializer = MemberSerializer(data=request.data) # deserializing(JSON->Dict자료형)
     if serializer.is_valid():
       new_member = serializer.save()
       return Response(MemberSerializer(new_member).data)

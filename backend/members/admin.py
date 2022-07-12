@@ -8,7 +8,6 @@ class MemberAdmin(UserAdmin):
   fieldsets = UserAdmin.fieldsets + (
     ("Custom Profile", 
     {"fields": (
-      "m_name",
       "m_email",
       "m_pic", 
       "m_intro",
@@ -19,3 +18,5 @@ class MemberAdmin(UserAdmin):
       "m_phone",
       "m_post")},),
   )
+
+  list_display = ('id', 'username', "m_email", "m_level")

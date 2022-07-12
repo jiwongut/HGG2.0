@@ -10,7 +10,7 @@ class MemberSerializer(serializers.ModelSerializer):
     model = Member
     fields = (
       "id",
-      "m_name",
+      "username",
       "m_email",
       "m_pic",
       "m_intro",
@@ -31,6 +31,7 @@ class MemberSerializer(serializers.ModelSerializer):
 
   # create Member
   def create(self, validated_data):
+    print(validated_data)
     password = validated_data.get('password')
     member = super().create(validated_data)
     member.set_password(password)

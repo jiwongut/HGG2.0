@@ -12,6 +12,7 @@ export const SearchBox = styled.div`
 export const Input = styled.input`
   border: 1px solid #95a5a6;
   border-radius: 5px;
+  width: 200px;
   margin-left: 10px;
   &:focus {
     outline: none;

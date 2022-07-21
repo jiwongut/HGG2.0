@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // 메인 페이지
 import Main from './routes/Main';
+
 // 카테고리 페이지
 import Category from './routes/Category';
 

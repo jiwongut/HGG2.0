@@ -2,6 +2,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // 메인 페이지
 import Main from './routes/Main';
+import Mypage from './routes/mypage/MypageMain';
+import Post from './components/Mypage/Home/Post';
+import Comment from './components/Mypage/Home/Comment';
+import MypageSetting from './routes/mypage/MypageSetting';
+import Review from './routes/review';
+import ReviewPost from './routes/review/reviewPost';
 
 // 카테고리 페이지
 import Category from './routes/Category';
@@ -30,7 +36,6 @@ function Router() {
           <Route path="post" element={<Post />} />
           <Route path="comment" element={<Comment />} />
         </Route>
-
         <Route path="/mypage/setting" element={<MypageSetting />} />
 
         <Route path="/review" element={<Review />} />

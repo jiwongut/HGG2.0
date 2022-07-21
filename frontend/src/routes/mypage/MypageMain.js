@@ -18,11 +18,16 @@ const TapSelect = styled(Link)`
   border-bottom: 2px solid ${props => (props.isActive ? 'black' : 'white')};
   text-align: center;
   cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  transition: 0.1s linear;
 `;
 
 function Mypage() {
   const commentURLMatch = useMatch('/mypage/comment');
   const postURLMatch = useMatch('/mypage/post');
+  const settingURLMatch = useMatch('/mypage/setting');
   return (
     <Container>
       <Header />

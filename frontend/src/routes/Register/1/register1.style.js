@@ -6,7 +6,7 @@ import { Box } from './Box';
 import { Label } from './Label';
 import axios from 'axios';
 
-const Button = styled.button`
+export const Button = styled.button`
   height: 40px;
   width: 206px;
   border-radius: 10px;

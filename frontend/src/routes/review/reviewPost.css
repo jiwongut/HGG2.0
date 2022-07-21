@@ -1,0 +1,22 @@
+textarea {
+width: 312px;
+height: 200px;
+background-color: #efefef;
+border-radius: 10px;
+border: 1px solid #bdc3c7;
+padding-left: 10px;
+font-size: 16px;
+transition: 0.1s linear;
+}
+
+textarea::-moz-focus-inner {
+    border: 1px solid #7f8c8d;
+    transition: 0.1s linear;
+    outline: none;
+}
+
+textarea::placeholder {
+    opacity: 0.6;
+    font-size: 14px;
+    padding-top: 5px;
+}

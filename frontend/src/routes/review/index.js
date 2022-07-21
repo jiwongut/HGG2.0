@@ -1,21 +1,19 @@
 import Backward from '../../components/Backward';
-import PostButton from '../../components/Button';
+// import PostButton from '../../components/Button';
 import Container from '../../components/Container';
-import BackwardTitle from '../../components/Mypage/Home/BackwardTitle';
-import BackwardTitleBox from '../../components/Mypage/Home/BackwardTitleBox';
-import Header from '../../Header';
-import Navigation from '../../Navigation';
-import CategoryResult from '../category/CategoryResult';
+// import BackwardTitle from '../Mypage/Home/BackwardTitle';
+import BackwardTitleBox from '../Mypage/Home/BackwardTitleBox';
+import Header from '../../components/Header';
+import Navigation from '../../components/Navigation';
+import CategoryResult from '../Category/List';
 import { Input, SearchBox } from './review';
 
 function Review() {
   return (
     <Container>
       <Header />
-      <BackwardTitleBox title="후기게시판">
-        <Backward />
-        <BackwardTitle />
-      </BackwardTitleBox>
+
+      <BackwardTitleBox title="후기게시판" />
       <SearchBox>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -31,16 +29,16 @@ function Review() {
             fill="#5538EE"
           />
         </svg>
-        <Input placeholder="검색어를 입력하세요." />
+        <Input placeholder="검색어를 입력하세요."/>
       </SearchBox>
       <CategoryResult />
-      <CategoryResult />
-      <CategoryResult />
+      {/* <CategoryResult />
+      <CategoryResult /> */}
 
       <div
         style={{ paddingTop: '30px', paddingRight: '30px', width: '100%', display: 'flex', justifyContent: 'flex-end' }}
       >
-        <PostButton url="./post" description="작성하기" />
+        {/* <PostButton url="./post" description="작성하기" /> */}
       </div>
       <Navigation />
     </Container>
